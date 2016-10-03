@@ -20,6 +20,10 @@ navbar {
   height: 38px;
 }
 
+.home-page-img {
+  box-shadow: 1px 1px 0 1px #eee;
+}
+
 /* reusable */
 .section-header {
   font-size: 22px;
@@ -34,6 +38,16 @@ navbar {
   position: relative;
   bottom: 2px;
   margin-bottom: 20px;
+}
+
+.art-pic {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.art-pic > img {
+  margin: auto;
 }
 
 /* custom dropdown navbar */
@@ -87,7 +101,7 @@ navbar[role="header-navbar-dropdown"] ul {
 navbar[role="header-navbar-dropdown"] ul > li {
   float: left;
   padding: .55em .55em;
-  width: 14%;
+  width: 12%;
   text-align: center;
   transition: color ease-in-out .3s ;
   cursor: pointer;
@@ -104,10 +118,6 @@ main {
   margin-top: 80px;
   width: 100%;
   min-height: 100vh;
-}
-
-main > section {
-  margin: 40px 0 60px;
 }
 
 /* header */
@@ -323,5 +333,5 @@ footer {
   margin: 0 auto;
   font-size: 13px;
   font-weight: 300;
-  padding: 10px 0 5px;
+  padding: 10px 0;
 }

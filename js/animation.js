@@ -29,8 +29,6 @@ const EXPAND_NAVLIST_HEIGHT = 271;
       var target = $(e.target);
       var dropdownBtn = $("#button")[0];
       if (target.is("#button")) {
-        console.log("in body click handler and target is #button");
-
         return;
       }
       if (!target.is("li.page-option") && !target.is("ul.page-options")) {
@@ -42,9 +40,10 @@ const EXPAND_NAVLIST_HEIGHT = 271;
     $("li.page-option").bind('click', function(e) {
         var targetPage = $(e.currentTarget).data("page");
         var pageToInactivate = $("section.active").removeClass("active");
-        console.log("I just click " + targetPage);
+        var dropdownBtn = $("#button")[0];
         $("#" + targetPage).addClass("active");
         collapseDropDownMenu ();
+        if (dropdownBtn.checked) { dropdownBtn.checked = false };
         e.preventDefault();
     });
 
