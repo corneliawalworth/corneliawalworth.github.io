@@ -107,6 +107,7 @@ navbar {
 	background-repeat: no-repeat;
 	background-size: 900%;
 	fill: #444444;
+  margin-right: 8px;
 }
 
 .icon-big {
@@ -192,7 +193,7 @@ navbar[role="header-navbar-dropdown"] ul > li:hover a {
 main {
   margin-top: 80px;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 130px);
 }
 
 /* header */
@@ -304,5 +305,5 @@ footer {
   margin: 0 auto;
   font-size: 13px;
   font-weight: 300;
-  padding: 10px 0;
+  padding: 20px 0;
 }

@@ -1,7 +1,7 @@
 /* mobile */
 @media (min-width: 300px) {
   main > section {
-    margin: 40px 10% 20px;
+    margin: 40px 10% 0;
   }
 
   #about {
@@ -37,13 +37,12 @@
   #about > .profile-pic {
     width: 80%;
   }
-
 }
 
 /* medium */
 @media (min-width: 600px) {
   main > section {
-    margin: 40px 10%;
+    margin: 40px 10% 0;
   }
 
   .subtitle {
@@ -69,7 +68,6 @@
 
 /* large */
 @media (min-width: 900px) {
-
   #about {
     margin-left: 22%;
     margin-right: 22%;
@@ -88,7 +86,6 @@
   .about-pics > figure {
     width: 33%;
   }
-
 }
 
 /* responsive adjustment */
