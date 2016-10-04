@@ -38,17 +38,43 @@ const EXPAND_NAVLIST_HEIGHT = 271;
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $("li.page-option").bind('click', function(e) {
-        var targetPage = $(e.currentTarget).data("page");
-        var pageToInactivate = $("section.active").removeClass("active");
-        var dropdownBtn = $("#button")[0];
-        $("#" + targetPage).addClass("active");
-        collapseDropDownMenu ();
-        if (dropdownBtn.checked) { dropdownBtn.checked = false };
-        e.preventDefault();
+      var targetPage = $(e.currentTarget).data("page");
+      var pageToInactivate = $("section.active").removeClass("active");
+      var dropdownBtn = $("#button")[0];
+      $("#" + targetPage).addClass("active");
+      $(".modal").css("display","none");
+      collapseDropDownMenu ();
+      if (dropdownBtn.checked) { dropdownBtn.checked = false };
+      e.preventDefault();
+    });
+
+    $(".home-page-img").bind('click', function(e) {
+      $(".modal").css("display","none");
+      $("section.active").removeClass("active");
+      $("#home").addClass("active");
+      e.preventDefault();
+    });
+
+    $(".art-pic > img").bind("click", function(e) {
+      var target = $(e.currentTarget);
+      var imgSrc = target.attr("src");
+      var offsetY = $(window).scrollTop();
+      $(".modal").css("display","block");
+      var modalContent = $(".modal-content > img");
+      var returnBtn = $(".modal-return-btn");
+      modalContent.attr("src", imgSrc);
+      modalContent.css("margin-top", offsetY);
+      returnBtn.css("top", offsetY + 20)
+      e.preventDefault();
+    });
+
+    $(".modal-return-btn").bind("click", function(e) {
+      $(".modal").css("display","none");
+      e.preventDefault();
     });
 
     $("#app-title").bind('click', function(e) {
-      var pageToInactivate = $("section.active").removeClass("active");
+      $("section.active").removeClass("active");
       $("#home").addClass("active");
       e.preventDefault();
     });
@@ -68,6 +94,5 @@ const EXPAND_NAVLIST_HEIGHT = 271;
         collapseDropDownMenu();
       }
     });
-
   });
 })();

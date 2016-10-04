@@ -97,12 +97,10 @@
     margin: 0 40px 0 6%;*/
   }
 
-  .art-pic {
-    width: 25%;
-  }
-
   .home-page-img {
     display: block;
+    float: left;
+    cursor: pointer;
   }
 
   .home-page-text  {

@@ -17,28 +17,21 @@
   <navbar id="navbar" role="header-navbar-dropdown">
     <input type="checkbox" id="button">
     <label for="button" onclick></label>
+    <img class="home-page-img" title="Home Page" src="./images/lucas_and_evan.jpg">
     <ul class="page-options group">
-      <li class="page-option" data-page="home">
-        <img class="home-page-img" title="Home Page" src="./images/lucas_and_evan.jpg">
-        <span class="home-page-text">Home</span>
-      </li>
+      <li class="page-option home-page-text" data-page="home">Home</li>
       <li class="page-option" data-page="printmaking">Printmaking</li>
-      <li class="page-option" data-page="etchings">Etchings</li>
-      <li class="page-option" data-page="moku-hanga">Moku Hanga</li>
       <li class="page-option" data-page="paintings">Paintings</li>
       <li class="page-option" data-page="drawings">Drawings</li>
-      <li class="page-option" data-page="more-art">More Art</li>
-      <li class="page-option" data-page="contact">Contact us</li>
+      <li class="page-option" data-page="contact">Contact</li>
     </ul>
   </navbar>
   <main>
     <header>
-      <h1 id="app-title"><small>BEST EVER</small>Printmaking And Etc.</h1>
+      <h1 id="app-title">Printmaking Etc.</h1>
     </header>
 
     <section id="home" class="active group">
-      <h2 class="section-header">About</h2>
-      <hr class="section-header-underline">
       <figcaption class="about-info">
         I am charged up about printmaking. I hope it shows. I don’t know why pies.
       </figcaption>
@@ -56,30 +49,6 @@
       <figure class="profile-pics">
         <!-- <img class="profile-pic" src="./images/etchings/etchings_11.png"> -->
       </figure>
-    </section>
-
-    <section id="etchings" class="group">
-      <h2 class="section-header">Etchings</h2>
-      <hr class="section-header-underline">
-      <figure class="profile-pics">
-      </figure>
-      <figcaption class="about-info">
-        <p>
-          Some description</br>
-        </p>
-      </figcaption>
-    </section>
-
-    <section id="moku-hanga" class="group">
-      <h2 class="section-header">Moku Hanga</h2>
-      <hr class="section-header-underline">
-      <figure class="profile-pics">
-      </figure>
-      <figcaption class="about-info">
-        <p>
-          Some description</br>
-        </p>
-      </figcaption>
     </section>
 
     <section id="paintings" class="group">
@@ -136,18 +105,6 @@
       </figcaption>
     </section>
 
-    <section id="more-art" class="group">
-      <h2 class="section-header">More Arts</h2>
-      <hr class="section-header-underline">
-      <figure class="profile-pics">
-      </figure>
-      <figcaption class="about-info">
-        <p>
-          Some description</br>
-        </p>
-      </figcaption>
-    </section>
-
     <section id="contact" class="group">
       <h2 class="section-header">Contact Me</h2>
       <hr class="section-header-underline">
@@ -160,6 +117,13 @@
       </figcaption>
     </section>
   </main>
+  <div class="modal">
+    <div class="modal-blocker"></div>
+    <div class="modal-content">
+      <img>
+    </div>
+    <button class="modal-return-btn"><span>&lang;</span>Go Back</button>
+  </div>
   <footer class="footer group">
     <p>
       &#169; 2016 All Rights Reserved.
