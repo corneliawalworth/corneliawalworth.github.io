@@ -1,6 +1,6 @@
 const COLLAPSE_NAVBAR_HEIGHT = 38;
-const EXPAND_NAVBAR_HEIGHT = 309;
-const EXPAND_NAVLIST_HEIGHT = 271;
+const EXPAND_NAVBAR_HEIGHT = 230;
+const EXPAND_NAVLIST_HEIGHT = 191;
 
 (function(){
   $(document).ready(function() {
