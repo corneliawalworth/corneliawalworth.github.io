@@ -67,7 +67,7 @@
 }
 
 /* large */
-@media (min-width: 900px) {
+@media (min-width: 880px) {
   #about {
     margin-left: 22%;
     margin-right: 22%;

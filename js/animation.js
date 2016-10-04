@@ -1,6 +1,6 @@
 const COLLAPSE_NAVBAR_HEIGHT = 38;
-const EXPAND_NAVBAR_HEIGHT = 230;
-const EXPAND_NAVLIST_HEIGHT = 191;
+const EXPAND_NAVBAR_HEIGHT = 268;
+const EXPAND_NAVLIST_HEIGHT = 229;
 
 (function(){
   $(document).ready(function() {
@@ -33,6 +33,7 @@ const EXPAND_NAVLIST_HEIGHT = 191;
       }
       if (!target.is("li.page-option") && !target.is("ul.page-options")) {
         collapseDropDownMenu ();
+        if (dropdownBtn.checked) { dropdownBtn.checked = false };
       }
     });
 
