@@ -17,10 +17,6 @@
     display: block;
   }
 
-  .skill-box {
-    width: 50%;
-  }
-
   .art-pic {
     height: auto;
     width: 100%;
@@ -50,10 +46,6 @@
     margin: 40px 10%;
   }
 
-  .skill-box {
-    width: 25%;
-  }
-
   .subtitle {
     padding: 0;
   }
@@ -73,11 +65,6 @@
   #about > .profile-pic {
     width: 60%;
   }
-
-  .about-info {
-    /*width: 140%;*/
-    /*left: -3%;*/
-  }
 }
 
 /* large */
@@ -88,15 +75,6 @@
     margin-right: 22%;
   }
 
-  .skill-box {
-    width: 16.667%;
-  }
-
-  #about > .profile-pic {
-    /*width: 30%;
-    margin: 0 40px 0 6%;*/
-  }
-
   .home-page-img {
     display: block;
     float: left;
@@ -105,11 +83,6 @@
 
   .home-page-text  {
     display: none;
-  }
-
-  .about-info {
-    /*width: 140%;
-    left: -10%;*/
   }
 
   .about-pics > figure {
@@ -128,6 +101,7 @@
 
   main {
     z-index: 20;
+    margin-top: 50px;
   }
 
   navbar[role="header-navbar-dropdown"] {

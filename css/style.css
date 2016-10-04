@@ -52,7 +52,6 @@ section:not(.active) {
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  /*top: 0;*/
 }
 
 .modal-return-btn > span {
@@ -98,6 +97,32 @@ navbar {
 
 .art-pic > img {
   margin: auto;
+}
+
+/* sprite */
+.icon {
+	display: inline-block;
+  position: relative;
+	background-image: url('./../images/icon-sprite.svg');
+	background-repeat: no-repeat;
+	background-size: 900%;
+	fill: #444444;
+}
+
+.icon-big {
+  width: 40px;
+  height: 40px;
+  top: 15px;
+}
+
+.icon-normal {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+}
+
+.icon-envelop {
+  background-position: 0px 0px;
 }
 
 /* custom dropdown navbar */
@@ -210,21 +235,6 @@ main > header {
   box-shadow: 3px 3px 4px 2px #ccc;
 }
 
-.pic-NY {
-  width: 230px;
-  transform: rotate(3deg);
-}
-
-.pic-me-NY {
-  width: 170px;
-  transform: rotate(-5deg);
-}
-
-.pic-Taiwan {
-  width: 260px;
-  transform: rotate(-5deg);
-}
-
 /* about */
 #about {
   margin-left: 25%;
@@ -268,85 +278,6 @@ main > header {
   font-weight: 300;
 }
 
-.show-taiwan-pic {
-  color: rgb(136, 10, 55);
-  font-weight: 400;
-  cursor: pointer;
-  position: relative;
-}
-
-.show-taiwan-pic:before {
-  content: "";
-  opacity: 0;
-  z-index: -1;
-  height: 5px;
-  width: 10px;
-  position: absolute;
-  top: 30px;
-  left: 19px;
-  border-bottom: 8px solid #000;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  box-sizing: border-box;
-  transition: opacity 500ms ease, top 500ms ease;
-}
-
-.show-taiwan-pic:after {
-  opacity: 0;
-  z-index: -1;
-  background-image: url('./../image/taiwan.jpg');
-  background-size: cover;
-  top: 20px;
-  right: -95px;
-  border-radius: 5px;
-  padding: 80px 120px;
-  content: "";
-  position: absolute;
-  box-shadow: 3px 3px 4px 2px #ccc;
-  transition: opacity 500ms ease, top 500ms ease;
-}
-
-.show-taiwan-pic:hover:after {
-  opacity: 1;
-  z-index: 10;
-  top: 30px;
-}
-
-.show-taiwan-pic:hover:before {
-  opacity: 1;
-  z-index: 10;
-  top: 22px;
-}
-
-/* skills */
-#skills {
-  padding: 0 15%;
-}
-
-.skill-box {
-  font-size: 15px;
-  font-weight: 300;
-  margin: 20px 0;
-  height: 80px;
-  display: block;
-  float: left;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.skill-pic {
-  width: 50px;
-  margin: 0 auto;
-}
-
-.skill-box > h4 {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
 /* contact */
 #contact {
   text-align: center;
@@ -365,16 +296,6 @@ main > header {
 
 .contact-icons > *:not(:last-child) {
   margin-right: 18px;
-}
-
-.resume {
-  display: block;
-  background: #eee;
-  padding: 5px 8px;
-  font-size: 14px;
-  font-weight: bold;
-  position: relative;
-  top: 18px;
 }
 
 /* footer */
