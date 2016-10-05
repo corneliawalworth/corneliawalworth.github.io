@@ -299,6 +299,11 @@ main > header {
   margin-right: 18px;
 }
 
+.personal-pic > img {
+  margin: auto;
+  max-width: 500px;
+}
+
 /* footer */
 footer {
   text-align: center;

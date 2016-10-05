@@ -17,6 +17,10 @@
     display: block;
   }
 
+  .personal-pic > img {
+    width: 80%;
+  }
+
   .art-pic {
     height: auto;
     width: 100%;
@@ -47,6 +51,10 @@
 
   .subtitle {
     padding: 0;
+  }
+
+  .personal-pic > img {
+    width: 60%;
   }
 
   .art-pic {
@@ -81,6 +89,10 @@
 
   .home-page-text  {
     display: none;
+  }
+
+  .personal-pic > img {
+    width: 80%;
   }
 
   .about-pics > figure {
