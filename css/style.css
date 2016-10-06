@@ -100,30 +100,16 @@ navbar {
 }
 
 /* sprite */
-.icon {
+.icon-pointing {
 	display: inline-block;
-  position: relative;
-	background-image: url('./../images/icon-sprite.svg');
-	background-repeat: no-repeat;
-	background-size: 900%;
-	fill: #444444;
-  margin-right: 8px;
-}
-
-.icon-big {
   width: 40px;
-  height: 40px;
-  top: 15px;
-}
-
-.icon-normal {
-  width: 30px;
-  height: 30px;
-  top: 10px;
-}
-
-.icon-envelop {
-  background-position: 0px 0px;
+  height: 20px;
+  top: 6px;
+  position: relative;
+	background-image: url('./../images/pointing.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+  margin-right: 5px;
 }
 
 /* custom dropdown navbar */
