@@ -64,8 +64,8 @@ const EXPAND_NAVLIST_HEIGHT = 229;
       var modalContent = $(".modal-content > img");
       var returnBtn = $(".modal-return-btn");
       modalContent.attr("src", imgSrc);
-      modalContent.css("margin-top", offsetY);
-      returnBtn.css("top", offsetY + 24)
+      modalContent.css("margin-top", offsetY + 5);
+      returnBtn.css("top", offsetY + 32)
       e.preventDefault();
     });
 
