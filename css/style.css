@@ -98,14 +98,10 @@ navbar {
 /* sprite */
 .icon-pointing {
 	display: inline-block;
-  width: 40px;
-  height: 20px;
-  top: 6px;
   position: relative;
 	background-image: url('./../images/pointing.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
-  margin-right: 5px;
 }
 
 /* custom dropdown navbar */
@@ -284,10 +280,6 @@ main > header {
 .personal-pic > img {
   margin: auto;
   max-width: 500px;
-}
-
-#contact .about-info {
-  font-size: 16px;
 }
 
 /* footer */

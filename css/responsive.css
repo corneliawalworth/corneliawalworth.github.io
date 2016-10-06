@@ -9,6 +9,17 @@
     margin-right: 15%;
   }
 
+  #contact .about-info {
+    font-size: 14px;
+  }
+
+  .icon-pointing {
+    width: 28px;
+    height: 14px;
+    top: 4px;
+    margin-right: 2px;
+  }
+
   .home-page-img {
     display: none;
   }
@@ -60,6 +71,17 @@
 
   .subtitle {
     padding: 0;
+  }
+
+  #contact .about-info {
+    font-size: 16px;
+  }
+
+  .icon-pointing {
+    width: 40px;
+    height: 20px;
+    top: 6px;
+    margin-right: 5px;
   }
 
   .personal-pic > img {
