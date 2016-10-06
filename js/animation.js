@@ -59,7 +59,7 @@ const EXPAND_NAVLIST_HEIGHT = 229;
     $(".art-pic > img").bind("click", function(e) {
       var target = $(e.currentTarget);
       var imgSrc = target.attr("src");
-      var offsetY = $(window).scrollTop() + 20;
+      var offsetY = $(window).scrollTop() + 5;
       $(".modal").css("display","block");
       var modalContent = $(".modal-content > img");
       var returnBtn = $(".modal-return-btn");
