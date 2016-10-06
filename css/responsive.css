@@ -27,6 +27,15 @@
     margin-bottom: 10px;
   }
 
+  .modal-content {
+    padding: 0 10%;
+  }
+
+  .modal-content > img {
+    height: auto;
+    width: 100%;
+  }
+
   .art-pic > img {
     width: 100%;
     height: auto;
@@ -55,6 +64,17 @@
 
   .personal-pic > img {
     width: 60%;
+  }
+
+  .modal-content {
+    padding: 0 20%;
+  }
+
+  .modal-content > img {
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 65%;
   }
 
   .art-pic {
