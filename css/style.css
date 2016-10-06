@@ -286,6 +286,10 @@ main > header {
   max-width: 500px;
 }
 
+#contact .about-info {
+  font-size: 16px;
+}
+
 /* footer */
 footer {
   text-align: center;
