@@ -62,7 +62,6 @@ navbar {
 }
 
 .home-page-img {
-  box-shadow: 1px 1px 0 1px #eee;
   position: relative;
   top: -10px;
   left: 0px;
@@ -184,7 +183,7 @@ main > header {
   font-weight: bold;
   text-align: center;
   line-height: 48px;
-  margin-top: 20px;
+  margin: 20px 0;
   cursor: pointer;
 }
 
@@ -233,6 +232,7 @@ main > header {
 }
 
 .profile-pic {
+  max-width: 450px;
   height: auto;
   width: 80%;
   margin: auto;
